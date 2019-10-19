@@ -13,7 +13,7 @@ while (name == '' || name == null){
 
 alert(name + ' , я загадала число от 100 до 1. Попробуй отгадать!');
 
-let namber = /*Math.ceil(Math.random()*100)*/40;
+let namber = Math.ceil(Math.random()*100);
 let guess = prompt('Какое число я загадал?');
 let GuessOfnamber = 0;
 
@@ -29,7 +29,7 @@ while(guess != namber){
 
 	}
 }
-		
+
 switch(GuessOfnamber){
 	case 1:document.write(alert('Ты угадал! Это число '+ namber + '. Тебе понадобилось ' + GuessOfnamber + ' попытка.'));break;
 	case 2:document.write(alert('Ты угадал! Это число '+ namber + '. Тебе понадобилось ' + GuessOfnamber + ' попытки.'));break;
